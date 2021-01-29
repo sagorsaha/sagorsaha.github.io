@@ -1,0 +1,150 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+a{
+	text-decoration:none;
+}
+li{
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,a,input,button{
+	font-family: 'Open Sans', sans-serif;
+
+}
+.gallery{
+	width: 100%;
+	padding: 60px 0px;
+}
+.text-center li a{
+	margin-left: 25px;
+	position:relative;
+	padding: 8px;
+}
+.text-center li a:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height:4px;
+	background: red;
+	margin-top: 10px;
+	transition:0.7s ease-in-out;
+}
+.text-center li a:hover:before{
+ width: 100%;
+ transition: 0.7s ease-in-out;
+ transform: scale(1.9);
+}
+.text-center li a:hover{
+	color:gray !important;
+}
+.gallery ul li{
+	display: inline-block;
+	margin:10px;
+}
+.gallery ul li a{
+	color:black;
+
+}
+.gallery-img{
+	display: flex;
+   
+}
+.gallery-img img{
+	margin-top:5px;
+	padding: 5px;
+	
+}
+.line{
+	height: 2px;
+	width: 60px;
+	background: black;
+}
+.effect{
+	position: relative;
+	overflow: hidden;
+	
+}
+.hover-text a i{
+	
+	height: 20px;
+	width: 20px;
+	border: 1px solid white;
+	line-height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+}
+.hover-text p{
+	font-weight: 400;
+	font-size: 12px;
+	color: black;
+}
+.hover-text a{
+	display: block;
+	text-align: center;
+
+}
+
+
+.hover-text h1{
+font-weight: 400;
+font-size: 20px;
+color: black;
+
+}
+.hover-text{
+	
+	position: absolute;
+    
+	left:0 px;
+	right: 0px;
+	height: 0%;
+	bottom:-65px;
+	background: rgba(0,0,0,0.25);
+	padding: 30px;
+	transition: 0.5s ease-in-out;
+
+	
+}
+.effect:hover .hover-text{
+	height: 100%;
+	bottom: 0px;
+	transition: 0.5s ease-in-out;
+
+	
+
+	}
+.name{
+margin-left: 500px;
+padding:10px 50px;
+border: none;
+border: 1px solid #51a351;
+background: #51a351;
+border-radius: 10px;
+}
+.testimonial{
+	width: 100%;
+	padding: 60px 0px;
+	text-align: center;
+}
+.testimonial h1,h4{
+	color: #535356;
+	font-size: 32px;
+	font-weight: 600;
+}
+.testimonial p{
+	color: #59595a;
+	font-weight: 400;
+	font-size: 18px;
+}
+.owl-carousel .owl-item img {
+    
+    width:auto !important;
+    display: inline-block !important;
+}
+
